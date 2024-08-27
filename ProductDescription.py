@@ -3,6 +3,7 @@ import os
 import streamlit as st
 
 GOOGLE_APPLICATION_CREDENTIALS = AIzaSyDRCP6FoT0-NbhUl6vh0G4ohKo0TauH3-Q
+os.getenv("GOOGLE_APPLICATION_CREDENTIALS")
 # Set your Gemini API key
 genai.configure(api_key=os.environ["GOOGLE_APPLICATION_CREDENTIALS"])
 
