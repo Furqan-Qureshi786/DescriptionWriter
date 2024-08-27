@@ -2,8 +2,9 @@ import google.generativeai as genai
 import os
 import streamlit as st
 
+GOOGLE_APPLICATION_CREDENTIALS = AIzaSyDRCP6FoT0-NbhUl6vh0G4ohKo0TauH3-Q
 # Set your Gemini API key
-genai.configure(api_key=os.environ["AIzaSyDRCP6FoT0-NbhUl6vh0G4ohKo0TauH3-Q"])
+genai.configure(api_key=os.environ["GOOGLE_APPLICATION_CREDENTIALS"])
 
 # Function to generate product description
 def generate_product_description(product_details):
