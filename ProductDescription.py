@@ -3,7 +3,7 @@ import os
 import streamlit as st
 
 # Set your Gemini API key
-genai.configure(api_key=os.environ["AIzaSyCiQqtc4IcXSguZ-DRWOwqcB1wPglJ4ZeY"])
+genai.configure(api_key=os.environ["AIzaSyDRCP6FoT0-NbhUl6vh0G4ohKo0TauH3-Q"])
 
 # Function to generate product description
 def generate_product_description(product_details):
