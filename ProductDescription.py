@@ -20,6 +20,8 @@ with st.container():
             background-color: #2c2c2c;
             padding: 20px;
             border-radius: 10px;
+            width: 300px;
+            height: 500px
         }
         </style>
         """,
