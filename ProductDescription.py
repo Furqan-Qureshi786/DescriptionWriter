@@ -11,8 +11,6 @@ def generate_product_description(product_details):
     response = model.generate_content([product_details])
     
     return response.text
-col = st.columns()
-with col:
 
     st.title("Product Description Writer")
     st.write("Enter product details below to generate a compelling product description:")
