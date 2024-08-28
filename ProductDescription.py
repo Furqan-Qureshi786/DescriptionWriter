@@ -13,8 +13,10 @@ def generate_product_description(product_details):
     return response.text
 
 # Streamlit interface
-st.title("Product Description Writer")
-st.write("Enter product details below to generate a compelling product description:")
+col = st.columns()
+with col:
+    st.title("Product Description Writer")
+    st.write("Enter product details below to generate a compelling product description:")
 
 # Text input for product details
 product_details = st.text_area("Product Details", placeholder="Enter product features, specifications, etc.")
