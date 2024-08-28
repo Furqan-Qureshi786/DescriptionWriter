@@ -2,10 +2,7 @@ import google.generativeai as genai
 import os
 import streamlit as st
 
-GOOGLE_APPLICATION_CREDENTIALS = AIzaSyDRCP6FoT0-NbhUl6vh0G4ohKo0TauH3-Q
-os.getenv("GOOGLE_APPLICATION_CREDENTIALS")
-# Set your Gemini API key
-genai.configure(api_key=os.environ["GOOGLE_APPLICATION_CREDENTIALS"])
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "C:\Users\furqa\OneDrive\Desktop\ProductDescriptionApp\sound-decoder-433912-d5-84603ce6e643.json"
 
 # Function to generate product description
 def generate_product_description(product_details):
