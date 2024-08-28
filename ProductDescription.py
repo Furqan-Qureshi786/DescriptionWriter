@@ -2,7 +2,7 @@ import google.generativeai as genai
 import os
 import streamlit as st
 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "C:\Users\furqa\OneDrive\Desktop\ProductDescriptionApp\sound-decoder-433912-d5-84603ce6e643.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = r"C:\Users\furqa\OneDrive\Desktop\ProductDescriptionApp\sound-decoder-433912-d5-84603ce6e643.json"
 
 # Function to generate product description
 def generate_product_description(product_details):
