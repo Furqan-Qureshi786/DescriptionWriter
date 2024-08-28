@@ -33,7 +33,7 @@ st.markdown(
 )
 
 # Using the custom CSS class to wrap all the content
-st.markdown('<div class="tile">', unsafe_allow_html=True)
+
 
 # Title and description inside the tile
 st.title("Product Description Writer")
