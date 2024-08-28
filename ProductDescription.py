@@ -2,7 +2,6 @@ import google.generativeai as genai
 import os
 import streamlit as st
 
-# Function to generate product description
 def generate_product_description(product_details):
     # Create a generative model instance
     model = genai.GenerativeModel(model_name="gemini-1.5-flash")
