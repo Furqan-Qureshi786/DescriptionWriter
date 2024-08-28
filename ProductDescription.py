@@ -12,8 +12,8 @@ def generate_product_description(product_details):
     
     return response.text
 
-    st.title("Product Description Writer")
-    st.write("Enter product details below to generate a compelling product description:")
+st.title("Product Description Writer")
+st.write("Enter product details below to generate a compelling product description:")
 
 # Text input for product details
 product_details = st.text_area("Product Details", placeholder="Enter product features, specifications, etc.")
