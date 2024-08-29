@@ -1,11 +1,16 @@
 import google.generativeai as genai
 import os
 import streamlit as st
+import json
 
-# Function to generate product description
-def generate_product_description(product_details):
-    # Create a generative model instance
-    model = genai.GenerativeModel(model_name="gemini-1.5-flash")
+my_api_key = "AIzaSyBIQqh9_OJE5fVa6O2tq5sn9lv4YHpvxOo"
+
+# Configure the API key
+genai.configure(api_key=my_api_key)
+
+def generate_product_description(product_details, model_name):
+    # Create a generative model instance using the specified model name
+    model = genai.GenerativeModel(model_name=model_name)
 
     # Generate content using the product details
     response = model.generate_content([product_details])
