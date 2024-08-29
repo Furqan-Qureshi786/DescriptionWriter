@@ -3,6 +3,7 @@ import os
 import streamlit as st
 import json
 
+#My API Key
 my_api_key = "AIzaSyBIQqh9_OJE5fVa6O2tq5sn9lv4YHpvxOo"
 
 # Configure the API key
