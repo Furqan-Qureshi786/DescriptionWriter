@@ -1,4 +1,4 @@
 google.generativeai
-import os
+os
 streamlit
 json
