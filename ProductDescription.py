@@ -2,12 +2,15 @@ import google.generativeai as genai
 import os
 import streamlit as st
 import json
+from dotenv import load_dotenv
 
-#My API Key
-my_api_key = "AIzaSyBIQqh9_OJE5fVa6O2tq5sn9lv4YHpvxOo"
+
+load_dotenv()
+
+api_key = os.getenv('my_api_key')
 
 # Configure the API key
-genai.configure(api_key=my_api_key)
+genai.configure(api_key=api_key)
 
 def generate_product_description(product_details, model_name):
     # Create a generative model instance using the specified model name
@@ -19,7 +22,7 @@ def generate_product_description(product_details, model_name):
     return response.text
 
 # Load the JSON file containing model information
-with open(r'C:\Users\furqa\OneDrive\Desktop\ProductDescriptionApp\myproject-434018-ae71e32d1494.json', 'r') as f:
+with open(r'myproject-434018-ae71e32d1494.json', 'r') as f:
     model_info = json.load(f)
 
 # Extract the desired model name from the JSON file
