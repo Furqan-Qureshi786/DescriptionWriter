@@ -5,6 +5,36 @@ import json
 from dotenv import load_dotenv
 
 
+st.markdown(
+    """
+    <style>
+    body {
+        background-color: #f0f0f5;
+    }
+    .stMarkdown {
+        color: #333333;
+    }
+    * {
+        font-family: 'Courier New', monospace;
+    }
+    textarea {
+        background-color: #e6f2ff;
+        color: #333333;
+        font-family: 'Courier New', monospace;
+        border-radius: 5px;
+    }
+    .stMarkdown h3 {
+        background-color: #b3c6ff;
+        color: #000000;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+
 load_dotenv()
 
 api_key = os.getenv('my_api_key')
