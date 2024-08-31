@@ -4,12 +4,15 @@ import streamlit as st
 import json
 from dotenv import load_dotenv
 
-
+# Add CSS for styling and background image
 st.markdown(
     """
     <style>
     body {
-        background-color: #f0f0f5;
+        background-image: url("https://c4.wallpaperflare.com/wallpaper/621/301/89/macos-mojave-night-wallpaper-preview.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
     }
     .stMarkdown {
         color: #333333;
@@ -33,7 +36,6 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-
 
 load_dotenv()
 
