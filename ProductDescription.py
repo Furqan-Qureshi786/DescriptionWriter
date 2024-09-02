@@ -4,45 +4,16 @@ import streamlit as st
 import json
 from dotenv import load_dotenv
 
-# Add CSS for styling and background image
-st.markdown(
-    """
-    <style>
-    body {
-        background-image: url("https://c4.wallpaperflare.com/wallpaper/621/301/89/macos-mojave-night-wallpaper-preview.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
-    .stMarkdown {
-        color: #333333;
-    }
-    * {
-        font-family: 'Courier New', monospace;
-    }
-    textarea {
-        background-color: #e6f2ff;
-        color: #333333;
-        font-family: 'Courier New', monospace;
-        border-radius: 5px;
-    }
-    .stMarkdown h3 {
-        background-color: #b3c6ff;
-        color: #000000;
-        padding: 10px;
-        border-radius: 5px;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+api_key = st.secrets["api_key"]
+genai.configure(api_key=api_key)
+
 
 load_dotenv()
 
-api_key = os.getenv('my_api_key')
+# api_key = os.getenv('my_api_key')
 
-# Configure the API key
-genai.configure(api_key=api_key)
+# # Configure the API key
+# genai.configure(api_key=api_key)
 
 def generate_product_description(product_details, model_name):
     # Create a generative model instance using the specified model name
