@@ -4,16 +4,12 @@ import streamlit as st
 import json
 from dotenv import load_dotenv
 
-api_key = st.secrets["api_key"]
-genai.configure(api_key=api_key)
-
-
 load_dotenv()
 
-# api_key = os.getenv('my_api_key')
+api_key = os.getenv('my_api_key')
 
-# # Configure the API key
-# genai.configure(api_key=api_key)
+# Configure the API key
+genai.configure(api_key=api_key)
 
 def generate_product_description(product_details, model_name):
     # Create a generative model instance using the specified model name
